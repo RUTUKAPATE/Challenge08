@@ -11,7 +11,7 @@ margin.px: 10
 
 -- ftd.text: $submission.title
 role: $inherited.types.heading-medium
-color: $inherited.colors.text
+color: white
 background.linear-gradient: $lg
 height.fixed.px: 100
 text-align: center
@@ -33,7 +33,6 @@ padding-vertical.px: 4
 padding-horizontal.px: 8
 width.fixed.px: 332
 border-width.px: 1
-border-radius.px: 10
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 margin-top.px: 10
@@ -52,7 +51,6 @@ padding-vertical.px: 4
 padding-horizontal.px: 8
 width.fixed.px: 332
 border-width.px: 1
-border-radius.px: 10
 background.solid: #e9e9e9
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
@@ -71,7 +69,6 @@ padding-vertical.px: 4
 padding-horizontal.px: 8
 width.fixed.px: 332
 border-width.px: 1
-border-radius.px: 10
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 background.solid: #e9e9e9
@@ -91,7 +88,6 @@ padding-horizontal.px: 8
 margin-top.px: 10
 background.solid: #e9e9e9
 width.fixed.px: 332
-border-radius.px: 10
 border-width.px: 1
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
@@ -111,7 +107,6 @@ padding-horizontal.px: 8
 width.fixed.px: 332
 border-width.px: 1
 background.solid: #e9e9e9
-border-radius.px: 10
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 role: $inherited.types.copy-small
@@ -127,10 +122,10 @@ placeholder: Enter your complete address
 padding-vertical.px: 4
 padding-horizontal.px: 8
 width.fixed.px: 332
+height.fixed.px: 100
+multiline: true
 border-width.px: 1
-border-radius.px: 10
 background.solid: #e9e9e9
-height.fixed.px: 50
 margin-top.px: 10
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
@@ -149,10 +144,9 @@ padding-horizontal.px: 8
 margin-top.px: 10
 width.fixed.px: 332
 border-width.px: 1
-border-radius.px: 10
 background.solid: #e9e9e9
 border-color: $inherited.colors.cta-tertiary.focused
-type: text
+type: url
 role: $inherited.types.copy-small
 color: $inherited.colors.border
 
@@ -166,11 +160,11 @@ placeholder: Write your answer here
 padding-vertical.px: 4
 padding-horizontal.px: 8
 width.fixed.px: 332
+height.fixed.px: 200
+multiline: true
 margin-top.px: 10
 border-width.px: 1
 background.solid: #e9e9e9
-border-radius.px: 10
-height.fixed.px: 100
 border-color: $inherited.colors.cta-tertiary.focused
 type: text
 role: $inherited.types.copy-small
@@ -186,14 +180,15 @@ placeholder: Write your answer here
 padding-vertical.px: 4
 padding-horizontal.px: 8
 width.fixed.px: 332
+height.fixed.px: 200
 border-width.px: 1
 background.solid: #e9e9e9
 border-color: $inherited.colors.cta-tertiary.focused
 margin-top.px: 10
 margin-bottom.px: 20
-border-radius.px: 10
-height.fixed.px: 100
+text-align: start
 type: text
+multiline: true
 role: $inherited.types.copy-small
 color: $inherited.colors.border
 
@@ -203,12 +198,11 @@ margin-left.px: 240
 text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
-border-radius.px: 10
 background.solid: #00172D
 background.solid if { submission.is-hover }: #00264D
 $on-mouse-enter$: $ftd.set-bool($a = $submission.is-hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $submission.is-hover, v = false)
-color: $inherited.colors.border
+color: white
 link: https://www.submit.com
 
 -- end: ftd.container
