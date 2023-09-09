@@ -4,7 +4,7 @@ This template will help you create a submisssion form in no time.
 
 # Preview
 
-![Form](images/form.png)
+![Form](.github/assets/form.png)
 
 ## fastn and Curious?
 
